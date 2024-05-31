@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        .card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            border-radius: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center" style="width: 18rem;">
+    <img src="..." class="container d-flex justify-content-center align-items-center" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+<div class="container mt-5">
+    <h2 class="mb-4">Available Tickets</h2>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/500x250" class="card-img-top" alt="Slipknot Concert">
+                <div class="card-body">
+                    <h5 class="card-title">Slipknot Konseri</h5>
+                    <p class="card-text">Event: agalarla eğlence</p>
+                    <p class="card-text">Date: 2024-06-15</p>
+                    <p class="card-text">Slipknot konser</p>
+                    <p class="card-text text-danger">10TL</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/500x250" class="card-img-top" alt="Slipknot Concert">
+                <div class="card-body">
+                    <h5 class="card-title">Slipknot Konseri 2</h5>
+                    <p class="card-text">Event: agalarla eğlence</p>
+                    <p class="card-text">Date: 2024-06-15</p>
+                    <p class="card-text">açıklama</p>
+                    <p class="card-text text-danger">Bedava</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

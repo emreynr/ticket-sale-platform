@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr" xmlns:th="http://www.thymelaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="logo">
+        <img src="https://viagogo.com/favicon.ico" alt="Logo">
+        <h1>VIVAGO</h1>
+    </div>
+    <nav>
+        <a th:href="@{/api/anasayfa}">Anasayfa</a>
+        <a th:href="@{/api/cinema}">Sinema Bileti</a>
+        <a th:href="@{/api/concert}">Konser Bileti</a>
+        <a th:href="@{/api/theatre}">Tiyatro Bileti</a>
+        <a th:href="@{/api/ShowFormForAdd}">Giris Yap </a>
+        <a th:href="@{/api/ShowFormForAdd}">Kayit Ol</a>
+    </nav>
+</div>
+<div class="hero">
+    <img src="https://via.placeholder.com/1200x300" alt="Hero Image">
+    <div class="content">
+        <h2>Olivia Rodrigo</h2>
+        <button>See Tickets</button>
+    </div>
+</div>
+
+<div class="categories">
+    <h2>Popular Categories</h2>
+    <div class="category-list">
+        <div class="category-item">Pop</div>
+        <div class="category-item">Rock Music</div>
+        <div class="category-item">Soccer</div>
+        <div class="category-item">Formula 1 - Global</div>
+        <div class="category-item">Basketball</div>
+        <div class="category-item">Tennis</div>
+        <div class="category-item">Baseball</div>
+        <div class="category-item">Hockey</div>
+        <div class="category-item">Classical</div>
+        <div class="category-item">Jazz</div>
+        <div class="category-item">Hip-Hop</div>
+        <div class="category-item">Country</div>
+    </div>
+</div>
+
+<span th:text="${user}"/>
+
+</body>
+</html>

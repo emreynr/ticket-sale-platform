@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Düzenle</h3>
+
+                    <form action="#" th:action="@{/ticket/ticketSave}"
+                          th:object="${theTicket}" method="POST">
+
+                        <!--- when used update button, get employee information from db -->
+                        <!--- it shows some employee informations according id -->
+                        <input type="hidden" th:field="*{id}"/>
+
+                        <input type="text" th:field="*{ticketName}"
+                               class="form-control mb-4 w-25" placeholder="Bilet Adı">
+
+                        <input type="text" th:field="*{ticketCategory}"
+                               class="form-control mb-4 w-25" placeholder="Kategori">
+
+                        <input type="text" th:field="*{ticketPrice}"
+                               class="form-control mb-4 w-25" placeholder="Bilet Fiyati TL">
+
+                        <input type="text" th:field="*{ticketFeatures}"
+                               class="form-control mb-4 w-25" placeholder="Açıklama">
+
+                        <input type="text" th:field="*{ticketCount}"
+                               class="form-control mb-4 w-25" placeholder="Bilet Adedi">
+
+                        <input type="text" th:field="*{ticketDate}"
+                               class="form-control mb-4 w-25" placeholder="Bilet Tarihi">
+
+                        <button type="submit" class="btn btn-info col-2">Save</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
